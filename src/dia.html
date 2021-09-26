@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="Es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante lo Nuestro</title>
+
+</head>
+
+<body>
+    
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            max-width: 1400px;
+            min-width: 375px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 0;
+            margin-bottom: 0;
+            color: #27251F;
+        }
+
+        .diario-section {
+            display: flex;
+            margin-bottom: 50px;
+        }
+        .seccion-bebidas {
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .diario-info {
+            width: 50%;
+            padding: 20px;
+            background-color: #FFC72C;
+        }
+        .footer{
+            width: 100%;
+            padding: 20px;
+            background-color: #DA291C;
+        }
+
+        .diario-header {
+            display: inside;
+            justify-content: center;
+        }
+
+        .diario-info__title {
+            align-self: auto;
+        }
+      
+       
+    </style>
+      
+       <!-- inicio sección de bebidas -->
+       <section id="diario" class="diario-section"></section>
+      <center> <h1>Platos del Día</h1> </center>
+       <div id="bebidas" class="seccion-bebidas">
+          
+            <article class="diario-info">
+               <div class="diario-header">
+                   <img class="diario-info__imagen" src="img-platos-dia/Ejecutivo.jpg" alt=""  width="550" height="400">
+                   <h2 class="diario-info__title">Almuerzo ejecutivo</h2>
+                   <P>$ 9.000</P>
+               </div>
+               <p class="diario-info__text">
+                Sopa del día, bandeja con arroz blanco, papa o plátano, proteína, energético, ensalada y jugo natural.
+               </p>
+               <label for="">Cantidad</label>
+               <input type="Seleccione">
+               <button type="button" onclick="acumulador()">Agrega al pedido</button>
+                              
+           </article>
+          
+          
+           <article class="diario-info">
+               <div class="diario-header">
+                   <img class="diario-info__imagen" src="img-platos-dia/Ajiaco.jpg" alt="" width="550" height="400">
+                   <h2 class="diario-info__title">Ajiaco</h2>
+                   <P>$ 10.000</P>
+               </div>
+               <p class="diario-info__text">
+                Sopa blanca hecha con pollo, papa, maíz, crema agria, y un acompañamientos de arroz blanco y aguacate.
+               </p>
+               <label for="">Cantidad</label>
+               <input type="Seleccione">
+               <button type="button" onclick="acumulador()">Agrega al pedido</button>
+           </article>
+ 
+           <article class="diario-info">
+               <div class="diario-header">
+                   <img class="diario-info__imagen" src="img-platos-dia/Lechona.jpg" alt=""  width="550" height="400">
+                   <h2 class="diario-info__title">Lechona</h2>
+                   <P>$ 7.000</P>
+               </div>
+               <p class="diario-info__text">
+                Mezcla de garbanzos, carne de cerdo, especias y arroz acompañado de arepa.
+               </p>
+               <label for="">Cantidad</label>
+               <input type="Seleccione">
+               <button type="button" onclick="acumulador()">Agrega al pedido</button>
+           </article>
+ 
+           <article class="diario-info">
+               <div class="diario-header">
+                   <img class="diario-info__imagen" src="img-platos-dia/Bandeja_paisa.jpg" alt=""  width="550" height="400">
+                   <h2 class="diario-info__title">Bandeja Paisa</h2>
+                   <P>$ 10.000</P>
+               </div>
+               <p class="diario-info__text">
+                Arroz blanco, frijoles rojos, carne molida o picada, plátano, chorizo, maíz, chicharrón de cerdo, huevo frito, arepa y aguacate.
+               </p>
+               <label for="">Cantidad</label>
+               <input type="Seleccione">
+               <button type="button" onclick="acumulador()">Agrega al pedido</button>
+           </article>
+ 
+           <article class="diario-info">
+               <div class="diario-header">
+                   <img class="diario-info__imagen" src="img-platos-dia/sancocho.jpeg" alt=""  width="550" height="400">
+                   <h2 class="diario-info__title">Sancocho</h2>
+                   <P>$ 10.000</P>
+               </div>
+               <p class="diario-info__text">
+                Sancocho de carne o pescado. Contiene yuca, maíz, papas y plátano, y acompañamiento de arroz blanco.
+               </p>
+               <label for="">Cantidad</label>
+               <input type="Seleccione">
+               <button type="button" onclick="acumulador()">Agrega al pedido</button>
+           </article>
+ 
+           <article class="diario-info">
+               <div class="diario-header">
+                   <img class="diario-info__imagen" src="img-platos-dia/Mamona.jpg" alt=""  width="550" height="400">
+                   <h2 class="diario-info__title">Carne a la Mamona</h2>
+                   <P>$ 12.000</P>
+               </div>
+               <p class="diario-info__text">
+                Carne de ternera a la brasa, acompañada con papa, plátano, yuca y cubierta con ají (opcional).
+               </p>
+               <label for="">Cantidad</label>
+               <input type="Seleccione">
+               <button type="button" onclick="contador()">Agrega al pedido</button>
+
+           </article>
+ 
+           <article class="diario-info">
+               <div class="diario-header">
+                   <img class="diario-info__imagen" src="img-platos-dia/Changua.jpg" alt=""  width="550" height="400">
+                   <h2 class="diario-info__title">Changua</h2>
+                   <P>$ 6.000</P>
+               </div>
+               <p class="diario-info__text">
+                Sopa a base de leche con huevo, cebolla, cilantro, tostadas o pan y chocolate.
+               </p>
+               <label for="">Cantidad</label>
+               <input type="Seleccione">
+               <button type="button" onclick="acumulador()">Agrega al pedido</button>
+                              
+           </article>
+
+           <article class="diario-info">
+               <div class="diario-header">
+                   <img class="diario-info__imagen" src="img-platos-dia/Mondongo.jpg" alt=""  width="550" height="400">
+                   <h2 class="diario-info__title">Mondongo</h2>
+                   <P>$ 10.000</P>
+               </div>
+               <p class="diario-info__text">
+                Sopa de mondongo con variedad de carne, verduras, papa y un acompañamiento de arroz blanco, aguacate y plátano. 
+               </p>
+               <label for="">Cantidad</label>
+               <input type="Seleccione">
+               <button type="button" onclick="acumulador()">Agrega al pedido</button>
+                              
+           </article>
+
+            
+       </div>
+       </section>
+        
+  </body>
+  <footer class="footer">
+    <form method="get" action="file:///G:/Escritorio/doc%20Uni%20UTP/desarrollo%20web/restaurante/Proyecto-restaurante-lo-nuestro-main/src/index.html">
+     <center><button type="submit">Volver a la pagina principal</button> </center> 
+  </footer>
+</html>

@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante lo Nuestro</title>
+
+</head>
+
+<body>
+    
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            max-width: 1400px;
+            min-width: 375px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 0;
+            margin-bottom: 0;
+            color: #222222;
+        }
+
+        .header-section {
+            margin-bottom: 100px;
+            
+        }
+        
+        h2{
+            text-align:center;
+            justify-content: center;  
+            
+        }
+        p{
+            justify-content: center;
+        }
+       
+        
+
+        .header-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            text-align: center;
+
+        }
+
+        .site-title {
+            width: 30%;
+           
+       
+        }
+
+        .site-nav {
+            width: 40%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .site-nav>a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .site-nav>a:hover {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+        .logo-container {
+            width: 30%;
+        }
+
+        .logo-container__site-logo {
+            height: 80px;
+        }
+
+        .banner {
+            
+            width: 100%;
+        }
+
+        .banner>img {
+            width: 100%;                       
+            height: 400px;
+            max-width: 1400px;
+            object-fit: cover;
+        }
+
+        .services-section,
+        .seccion-noticias,
+        .seccion-equipo {
+            display: flex;
+            margin-bottom: 100px;
+        }
+
+        .seccion-noticias,
+        .header-container{
+            background-color: #c07410
+
+        }
+
+        .seccion-noticias {
+            flex-wrap: wrap;
+            
+        }
+
+        .services-info {
+            padding: 20px;
+            text-align: center;
+            background: rgb(177, 89, 7) ;
+            
+        }
+      
+
+        .news-info {
+            width: 50%;
+            padding: 20px;
+        }
+       
+        .news-header {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .news-info__title {
+            align-self: center;
+        }
+         
+        .seccion-equipo{
+            background-color: #f3a683;
+        }
+       
+
+        .footer-section {
+            background-color: #df6b36;
+            height: 260px;
+            display: flex;
+            color: white;
+            justify-content: space-evenly;
+        }
+        
+        .derecho-autor {
+            background-color: #df6b36;
+            height: 50px;
+            display: flex;
+            color: white;
+            justify-content: space-evenly;
+        }
+        
+        .services-info__text{
+            text-align: justify;
+
+        }
+        .news-info__text{
+             text-align: justify;
+        }
+        .team-info__text{
+            text-align: justify;
+        }
+
+        .services-info__imagen {
+            border-radius: 20%;
+            width: 100%;
+            height: 300px;
+            margin-right: center;
+            margin-left: center;
+        }
+
+        .team-info{
+            width: 25%;
+            padding: 15px;
+        }
+
+        .team-info__imagen{
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .news-info__imagen{
+            width: 600px;
+            height: 350px;
+        }
+
+        button{
+            border-radius: 50%;
+            
+            background-color: #b3562c;
+            height: 50px;
+            padding: 4px;
+            width: 120px;
+            color: white     
+       
+        }
+        
+        .button1 {
+            border-radius: 4%;
+            background-color: #eb8c32;
+            align-content: center;
+            height: 40px;
+            padding: 6px;
+            width: 200px;
+            color: white
+            
+             
+       
+        }
+       
+        .plato-dia{        
+            border-color: #f5c02f;
+            border-style: solid;
+            border-right-width: 15%;
+        }
+        .plato-carta{        
+            border-color: #f5c02f;
+            border-style: solid;
+            border-right-width: 15%;
+        }
+        .bebidas{        
+            border-color: #f5c02f;
+            border-style: solid;
+            border-right-width: 15px;
+        }
+        .col {
+          border:#e97540 solid;
+         
+            } 
+          
+
+
+    </style>
+
+<!-- inicio encabezado del sitio -->
+   
+<main>
+  
+       
+   
+    <header >
+        
+              
+        <nav class="header-section" >
+                              
+        <div class="site-title">
+            <h1> Restaurante lo Nuestro</h1>
+        </div>
+        
+            <div class="header-container">
+    
+                
+               
+            <!-- Inicio menú navegación -->
+           
+          
+             <ul class="site-nav">
+             <a href="#">Inicio</a>
+             <a href="#services">Servicios</a>  
+             <a href="#news">Noticias</a>  
+             <a href="#team">Nuestro equipo</a> 
+       
+           </ul>     
+                 
+            <!-- Fin menú navegación -->           
+            
+            <div class="logo-container">
+                <img class="logo-container__site-logo" src="./imagenes/logomision.png" alt="Logo MisionTic 2022">
+            </div>
+        </div>
+            
+        <div class="banner">
+            <img src="./imagenes/banner.jpg" alt="A banner imagenes">
+        </div>
+       </div>
+    </nav>
+    </header> 
+
+<!-- fin encabezado del sitio -->
+
+
+    <!-- inicio contenido principal -->
+   
+   
+        
+        <h2>MENU</h2>
+        <section id="services" class="services-section">
+            
+        <!-- inicio sección de servicios -->
+        <div id="servicios" class="services-section">
+            <table>
+                <tr>
+                  
+                  
+                
+            </table>
+            <div class="plato-dia">
+            <article class="services-info">
+                <img class="services-info__imagen" src="imagenes/platos_dia.jpg" alt="" >
+                <th> <h2 class="services-info__title">Platos del dia </h2>
+                <p class="services-info__text">
+                  Sabemos que no hay amor mas sincero que el
+                   amor a la comida, quieres algo rapido, el 
+                   plato del dia te hara sentir el amor 
+                   que tenemos por lo nuestro..
+                  
+                   <form method="get" action="file:///G:\Escritorio\doc Uni UTP\desarrollo web\restaurante\Proyecto-restaurante-lo-nuestro-main\src\dia.html">
+                    <button type="submit">Ver Platos del Dia</button>
+                </form> 
+                    
+                </p>
+                </th>
+            </article>
+            </div>
+           
+            
+            <div class="plato-carta">
+               <article class="services-info">
+              
+                <img class="services-info__imagen" src="imagenes/platos_carta.jpg" alt="" >
+               <th> <h2 class="services-info__title">Platos a la carta</h2>
+                <p class="services-info__text">
+                    Es importante lo que el cliente quiera comer, 
+                    no lo que el chef quiera cosinar.
+                    Te ofrecemos platos esquisitos con el sabor y 
+                    toque de lo nuestro.
+                    <form method="get" action="file:///G:\Escritorio\doc Uni UTP\desarrollo web\restaurante\Proyecto-restaurante-lo-nuestro-main\src\carta.html">
+                        <button type="submit">Ver la Carta</button> 
+                    </form>   
+                        
+                    
+                </p>
+            </th>
+            </article>
+            </div>
+           
+            <div class="bebidas">
+            <article class="services-info">
+                <img class="services-info__imagen" src="imagenes/images.jpg" alt="" >
+                <th> <h2 class="services-info__title">Bebidas</h2>
+                <p class="services-info__text">
+                    Una buena compañìa hace mas plena la via,
+                    acompaña tu plato disfrutando de una deliciosa 
+                    bebida de lo nuestro.
+                    <form method="get" action="file:///G:\Escritorio\doc Uni UTP\desarrollo web\restaurante\Proyecto-restaurante-lo-nuestro-main\src\bebidas.html">
+                        <button type="submit">Ver Bebidas</button>
+                </p>
+                </th>
+                </form> 
+            </article>
+            </div>
+        </div>
+    
+    </section>
+    </tr>
+    </table>
+        <!-- fin sección de servicios -->
+
+      
+        <section id="news" class="news-section"> 
+        <h2>NOTICIAS</h2>
+        <!-- inicio sección de noticias -->
+        <div id="noticias" class="seccion-noticias">
+            <article class="news-info">
+                <h2 class="news-info__title">¡Abrimos!</h2>
+                <hr>
+                <div class="news-header">
+                    <img class="news-info__imagen" src="https://www.eventosuleta.com/wp-content/uploads/2020/11/organizar-un-evento-o-inauguracion-en-vitoria.jpg" alt="" >
+                    
+                </div>
+                <p class="news-info__text">
+                    Ven a nuestra gran inauguración el día 27 de septiembre donde podrás disfrutar de excelentes eventos en vivo y promociones en nuestros deliciosos platos. No te lo puedes perder.
+                </p>
+            </article>
+
+            <article class="news-info">
+                <h2 class="news-info__title">Espacio para todos</h2>
+                <hr>
+                <div class="news-header">
+                    <img class="news-info__imagen" src="https://www.toucanian.com/img/avatar/phpIHQhFZ_5cd81d0dda2c1.jpg" alt="" >
+                   
+                </div>
+                <p class="news-info__text">
+                Más que tu mejor amigo, es parte de tu familia. Por eso en "Lo nuestro" activamos el servicio de guardería para tu peludito, allí podrás dejar a tu mascota
+                mientras disfrutas de nuestros exquisitos manjares. Será tratado como en casa, no puede estar en mejores manos.
+                </p>
+        
+            </article>
+
+
+            <article class="news-info">
+                <h2 class="news-info__title">¡Gran sorteo!</h2>
+                <hr>
+                <div class="news-header">
+                    <img class="news-info__imagen" src="https://www.aviatur.com/source/redes/tips-para-viajar-en-crucero.jpg" alt="" >
+                   
+                </div>
+                <p class="news-info__text">
+                    En estes mes, por cada $100.000 en nuestro restaurante estarás participando en el sorteo de un gran crucero por toda Europa; tú y hasta
+                    3 personas más de tu familia o amigos podrán disfrutar de una semana llena de aventura. No dejes pasar esta oportunidad.
+                </p>
+            </article>
+
+            <article class="news-info">
+                <h2 class="news-info__title">Celebra con nosotros</h2>
+                <hr>
+                  <div class="news-header">
+                  <img class="news-info__imagen" src="https://www.enter.co/wp-content/uploads/2017/11/iStock-601920764-1024x768.jpg" alt="">
+                 
+                </div>
+                <p class="news-info__text">
+                    ¿Es tu día de cumpleaños? En restaurante "Lo nuestro" lo celebramos en grande. Ven en tu día especial y te ofrecemos increíbles promociones en nuestros platos, 
+                    además de obsequiarte el postre y un recuerdo de nuestra parte, para que nos lleves contigo a cualquier lugar.
+                </p>
+            </article>
+            
+        </div>
+        </section>
+        <!-- fin sección de noticias -->
+
+        <section id="team"  class="team-section"> 
+        <h2>EQUIPO</h2>
+        <!-- inicio sección de equipo -->
+        
+        <section id="team" class="seccion-equipo">
+            <table  class="col" >
+               
+                <tr >
+                    
+                  <th > <article class="team-info">
+                    <img class="team-info__lina.jpeg" src="imagenes/lina.jpeg" alt=""width="200" height="200"></th>
+                 
+                    <th><article class="team-info">
+                    <img class="team-info__imagen" src="http://placeimg.com/100/200/tech" alt="" width="200" height="200"> </th>
+                  
+                    <th><article class="team-info">
+                    <img class="team-info__imagen" src="imagenes/cristian.jpeg" alt=""width="200" height="200"></th>
+                  
+                    <th><article class="team-info">
+                    <img class="team-info__imagen" src="imagenes/daniel.jpg" alt="" width="200" height="200"></th>
+                    
+                    <th><article class="team-info">
+                        <img class="team-info__imagen" src="imagenes/Cesar_Pruyecto_rest.jpg" alt="" width="200" height="200"> </th>
+                </tr>
+                
+                <tr bgcolor=#f86019>
+                  <td>  <h2 class="team-info__title">Lina Marcela Trujillo Garcia</h2>
+                        <p class="team-info__text">
+                        Interesada en superarme cada día , aprender nuevos lenguajes de programación, alcanzar las metas , compartir conocimiento  , aplicar las TICS para mejorar
+                         la calidad de vida de muchas personas  y  aprovechar al máximo las oportunidades que se nos brindan .
+                        </p>
+                        </td> 
+
+                  <td>  <h2 class="team-info__title">Sebastian</h2>
+                         <p class="team-info__text">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora quas voluptate magni repellat eligendi! Inventore voluptas
+                        voluptates quia voluptatum expedita, ducimus delectus dolore eaque maiores iusto modi eum aut corporis?
+                        </p>
+                         </td>
+                  <td><h2 class="team-info__title">Cristian Fabian Molina</h2>
+                         <p class="team-info__text">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora quas voluptate magni repellat eligendi! Inventore voluptas
+                        voluptates quia voluptatum expedita, ducimus delectus dolore eaque maiores iusto modi eum aut corporis?
+                        </p>
+                        </td>
+                  <td> <h2 class="team-info__title">Daniel Alejandro Ortiz Juyo</h2> 
+                       <p class="team-info__text">
+                        Interesado en aprender cada día más a cerca de los lenguajes de programación para lograr el desarrollo de diversos software que faciliten la resolución de problemas
+                        y se adapten a los cambios que traen consigo las nuevas tecnologías.
+                       </p>
+                       </td>
+                  <td> <h2 class="team-info__title">Cesar Ricardo Moreno Bedoya</h2>
+                    <p class="team-info__text">
+                        Persona interesada, en aprender programacion, su mayor deseo es que este proyecto salga lo mejor posible y que junto con su grupo de compañeros nos graduemos de este curso de programacion, GOOD LUCK!!!!!
+
+                        </p>
+                        </td>
+                      
+                </tr>
+                <td align="center"><button class="button1"  method="get"   type="submit"><a href="https://m.facebook.com/login/?locale=es_ES">ver </a></button>
+                </article></td>
+                <td align="center"><button class="button1"  method="get"   type="submit"><a href="https://m.facebook.com/login/?locale=es_ES">ver </a></button>
+                </article></td>
+                <td align="center"><button class="button1"  method="get"   type="submit"><a href="https://m.facebook.com/login/?locale=es_ES">ver </a></button>
+                </article></td>
+                <td align="center"><button class="button1"  method="get"   type="submit"><a href="https://m.facebook.com/login/?locale=es_ES">ver </a></button>
+                </article></td>
+                <td align="center"><button class="button1"  method="get"   type="submit"><a href="https://m.facebook.com/login/?locale=es_ES">ver </a></button>
+                </article></td>
+
+              </table>                   
+                
+        </section>
+        
+        <!-- fin sección de equipo -->
+
+    </div>
+    <!-- fin contenido principal -->
+
+    <!-- Inicio pie del sitio -->
+    <footer >
+    <div class="footer-section"> 
+        <article> <!--la información que se registra esta abierta a cualquier cambio y es solo para uso del desarrollo de esta actividad por lo cual no es veridica-->
+            <h3>Ciudades </h3>
+           <h5><p>Bogotá </p>
+            <p> Medellín</p> 
+            <p> Neiva</p> 
+            <p> Bucaramanga</p> 
+            <p> Barranquilla</p> 
+            <p> Cali</p> 
+            </h5>
+        </article>
+
+        <article>
+            <h3>Servicios </h3>
+            <h5><p>Acceso para Discapacitados </p>
+                <p> Aire Libre </p>
+                <p> Aire Acondicionado </p>
+                <p> Ambiente Musical </p>
+                <p>Parqueadero </p>
+                <p>Wi-fi</p>
+                </h5>
+            </article>
+            <article>
+                <h3>Reservaciones</h3>
+             <h5><p>Horario Lunes a Domingo de 6 AM a 10 PM</p>
+                 <p>Teléfono 3124989745</p>
+                <p>Dirección Carrera 4b-sur #110 Barrio el Centro </p>
+                <p>Correo LoNuestroColombia@gmail.com </p>
+              </h5>
+            </article>
+            <article>
+                <h3>Síguenos </h3>
+                <a href="https://m.facebook.com/login/?locale=es_ES"><img src="imagenes/facebook.jpg" alt="" width="50" height="70">
+                
+                <a href="https://twitter.com/login?lang=es"><img src="imagenes/twitter.png" alt="" width="50" height="70">
+                    </a> </a> 
+            </article>
+        </div>                          
+                    
+</footer>
+   <div class="derecho-autor"> 
+    <article>
+        <h5>Copyright © 2021 UTP Grupo 77 Equipo-4 todos los derechos reservados</h5>
+    </article>
+   </div>   
+    <!-- fin pie del sitio -->  
+</main>
+</body>
+
+</html>

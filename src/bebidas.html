@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="Es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante lo Nuestro</title>
+
+</head>
+
+<body>
+    
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            max-width: 1400px;
+            min-width: 375px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 0;
+            margin-bottom: 0;
+            color: #222222;
+        }
+
+        .drinks-section {
+            display: flex;
+            margin-bottom: 50px;
+        }
+        .seccion-bebidas {
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .drinks-info {
+            width: 50%;
+            padding: 20px;
+            background-color: #658662;
+        }
+        .footer{
+            width: 100%;
+            padding: 20px;
+            background-color: #559151;
+        }
+
+        .drinks-header {
+            display: inside;
+            justify-content: center;
+        }
+
+        .drinks-info__title {
+            align-self: auto;
+        }
+      
+       
+    </style>
+      
+       <!-- inicio sección de bebidas -->
+       <section id="drinks" class="drinks-section"></section>
+      <center> <h1>BEBIDAS</h1> </center>
+       <div id="bebidas" class="seccion-bebidas">
+           <article class="drinks-info">
+               <div class="drinks-header">
+                   <img class="drinks-info__imagen" src="img-bebidas/limonada-natural.jpg" alt="">
+                   <h2 class="drinks-info__title">Limonada Natural</h2>
+                   <P>$ 6000</P>
+               </div>
+               <p class="drinks-info__text">
+                   Refrescante y deliciosa completamente natural 
+               </p>
+               <label for="">Limonadas</label>
+               <input type="Seleccione">
+               <button type="button" onclick="acumulador()">Agrega al pedido</button>
+           </article>
+ 
+           <article class="drinks-info">
+               <div class="drinks-header">
+                   <img class="drinks-info__imagen" src="img-bebidas/jugo de mandarina.jpeg" alt="">
+                   <h2 class="drinkss-info__title">Jugo de Mandarina</h2>
+                   <P>$ 6000</P>
+               </div>
+               <p class="drinks-info__text">
+                   Delicioso extracto de mandarinas maduras
+               </p>
+               <label for="">Jugos de Mandarina</label>
+               <input type="Seleccione">
+               <button type="button" onclick="acumulador()">Agrega al pedido</button>
+           </article>
+ 
+           <article class="drinks-info">
+               <div class="drinks-header">
+                   <img class="drinks-info__imagen" src="img-bebidas/jugo-de-mora.jpg" alt="">
+                   <h2 class="drinks-info__title">Jugo de Mora</h2>
+                   <P>$ 6000</P>
+               </div>
+               <p class="drinks-info__text">
+                   Moras Selccionadas con todo su sabor para disfrutar
+               </p>
+               <label for="">Jugos de Mora</label>
+               <input type="Seleccione">
+               <button type="button" onclick="acumulador()">Agrega al pedido</button>
+           </article>
+ 
+           <article class="drinks-info">
+               <div class="drinks-header">
+                   <img class="drinks-info__imagen" src="img-bebidas/refajo.jpg" alt="">
+                   <h2 class="drinks-info__title">Refajo</h2>
+                   <P>$ 15000</P>
+               </div>
+               <p class="drinks-info__text">
+                   Una Jarra fria de  la mezcla perfecta de sabor
+               </p>
+               <label for="">Jarra de Refajo</label>
+               <input type="Seleccione">
+               <button type="button" onclick="acumulador()">Agrega al pedido</button>
+           </article>
+ 
+           <article class="drinks-info">
+               <div class="drinks-header">
+                   <img class="drinks-info__imagen" src="img-bebidas/cervezas.jpeg" alt="">
+                   <h2 class="drinks-info__title">Cerveza Nacional</h2>
+                   <P>$ 7000</P>
+               </div>
+               <p class="drinks-info__text">
+                   En vaso a la temperatur adecuada para disfrutar el sabor de su elección
+               </p>
+               <label for="">Cervezas</label>
+               <input type="Seleccione">
+               <button type="button" onclick="contador()">Agrega al pedido</button>
+ 
+               <br><br>
+ 
+               <label for="">Marca de cerveza</label>
+               <input type="Seleccione">
+               <button type="button" onclick="acumulador()">Definir</button>
+           </article>
+ 
+           <article class="drinks-info">
+               <div class="drinks-header">
+                   <img class="drinks-info__imagen" src="img-bebidas/gaseosa.jpg" alt="">
+                   <h2 class="drinks-info__title">Gaseosa</h2>
+                   <P>$ 4000</P>
+               </div>
+               <p class="drinks-info__text">
+                   El sabor burbujeante de su predileccion
+               </p>
+               <label for="">Gaseosas</label>
+               <input type="Seleccione">
+               <button type="button" onclick="acumulador()">Agrega al pedido</button>
+ 
+               <br><br>
+ 
+               <label for="">Sabor</label>
+               <input type="Seleccione">
+               <button type="button" onclick="acumulador()">Definir</button>
+               
+           </article>
+            
+       </div>
+       </section>
+        
+  </body>
+  <footer class="footer">
+    <form method="get" action="file:///G:/Escritorio/doc%20Uni%20UTP/desarrollo%20web/restaurante/Proyecto-restaurante-lo-nuestro-main/src/index.html">
+     <center><button type="submit">Volver a la pagina principal</button> </center> 
+  </footer>
+</html>
+
+
+
+
+
+
+
+    
+   

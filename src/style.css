@@ -1,0 +1,215 @@
+
+/*Etiquetas Sebastian*/
+
+h1{
+    font-family: Helvetica, sans-serif black ;
+}
+
+/*class="btn btn-outline-primary"
+class="btn btn-primary dropdown-toggle"*/
+
+.btn-primary dropdown-toggle, .btn-primary dropdown-toggle :hover, .btn-primary dropdown-toggle :active{
+    color: rgb(10, 6, 6);
+}
+
+/*Etiquetas Marcela*/
+
+h2{
+    text-align:center;
+    justify-content: center;  
+    
+}
+p{
+    justify-content: center;
+}
+
+.Reservaciones-equipo{
+    background-color: #f3a683;
+}
+
+.derecho-autor {
+    background-color: #df6b36;
+    height: 50px;
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+}
+
+.Noticias-info__imagen{
+    width: 600px;
+    height: 350px;
+}
+
+.button{
+    border-radius: 50%; 
+    background-color: #b3562c;
+    height: 50px;
+    padding: 4px;
+    width: 120px;
+    color: white     
+
+}
+
+.button1 {
+    border-radius: 4%;
+    background-color: #eb8c32;
+    align-content: center;
+    height: 40px;
+    padding: 6px;
+    width: 200px;
+    color: white
+}
+
+.plato-dia{        
+    border-color: #f5c02f;
+    border-style: solid;
+    border-right-width: 15%;
+}
+.plato-carta{        
+    border-color: #f5c02f;
+    border-style: solid;
+    border-right-width: 15%;
+}
+.bebidas{        
+    border-color: #f5c02f;
+    border-style: solid;
+    border-right-width: 15px;
+}
+.col {
+  border:#c7f108 solid;
+ 
+    } 
+
+/*Etiquetas Base*/
+
+    * {
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+        max-width: 1400px;
+        min-width: 375px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+        color: #222222;
+    }
+
+    .header-section {
+        margin-bottom: 100px;
+        background: rgb(177, 89, 7) ;
+    }
+
+    .header-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        text-align: center;
+        
+    }
+
+    .site-title {
+        width: 30%;
+    }
+
+    .site-nav { /*modificado border y width por sebastian*/
+        width: 100%;
+        display: flex;
+        justify-content:space-around;
+        align-items:center;
+        border: 1px solid rgb(41, 190, 216);
+    }
+
+    .site-nav>a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .site-nav>a:hover {
+        text-decoration: underline;
+        font-weight: bold;
+    }
+
+    .logo-container {
+        width: 30%;
+    }
+
+    .logo-container__site-logo {
+        height: 80px;
+    }
+
+    .banner {
+        width: 100%;
+    }
+
+    .banner>img {
+        width: 100%;
+        height: 400px;
+        max-width: 1400px;
+        object-fit: cover;
+    }
+
+    .Menu-section,
+    .Reservaciones-section,
+    .team-section {
+        display: flex;
+        margin-bottom: 100px;
+    }
+
+    .Reservaciones-section,
+    .header-container{
+        background-color: #f7f7f7
+    }
+
+    .Reservaciones-section {
+        flex-wrap: wrap;
+    }
+
+    .Menu-info { /*modificado background por marcela*/
+        padding: 20px;
+        text-align: center;
+        background: rgb(177, 89, 7) ; 
+    }
+
+    .Noticias-info {
+        width: 50%;
+        padding: 20px;
+    }
+
+    .Noticias-header {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .Noticias-info__title {
+        align-self: center;
+    }
+
+    .footer-section { /*modificado background por marcela*/
+        background-color: #df6b36;
+        height: 260px;
+        display: flex;
+        color: white;
+        justify-content: space-evenly;
+    }
+
+    .Menu-info__imagen {/*modificado border-radius,width y height por marcela*/
+            border-radius: 20%;
+            width: 100%;
+            height: 300px;
+            margin-right: center;
+            margin-left: center;
+    }
+
+    .team-info{
+        width: 25%;
+        padding: 15px;
+    }
+
+    .team-info__imagen{
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
